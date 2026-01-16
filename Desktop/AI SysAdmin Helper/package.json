@@ -1,0 +1,18 @@
+{
+    "name": "ai-sysadmin-helper-root",
+    "version": "1.0.0",
+    "description": "Root workspace for AI SysAdmin Helper",
+    "scripts": {
+        "dev": "npm --prefix frontend run dev",
+        "backend:dev": "cd backend && uvicorn app.main:app --reload",
+        "frontend:install": "npm --prefix frontend install",
+        "install:all": "npm run frontend:install && cd backend && pip install -r requirements.txt",
+        "build": "npm --prefix frontend run build"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "concurrently": "^9.1.0"
+    }
+}
